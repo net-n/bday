@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="he"> <!-- Set the language to Hebrew -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Guy!</title>
+  <!-- Google Font: Rubik -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rubik', Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      direction: rtl;
+      overflow: hidden; /* Prevent scrolling while overlay is visible */
+    }
+
+    .parallax {
+      position: relative;
+      height: 100vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .parallax::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .parallax-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      color: #fff;
+    }
+
+    .section {
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ff4e50, #ff7300);
+    }
+
+    .section p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* Full-page overlay */
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #play-button {
+      background: #ff7300;
+      color: #fff;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #play-button:hover {
+      background: #ff4e50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-page Overlay -->
+  <div id="overlay">
+    <button id="play-button">לחצו להתחיל</button>
+  </div>
+
+  <!-- Header Section -->
+  <div class="parallax" style="background-image: url('IMG-20190301-WA0006.jpg');">
+    <div class="parallax-text">
+      <h1>גיא בן 30!</h1>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="section">
+    <p>
+      גיא אהוב ילד שלי, <br>
+      30 שנה עברו לי מהר מדי, כי כשאוהבים ונהנים, הזמן עף מהר ואיתך במיוחד הזמן טס, 
+      מהיום הראשון שנולדת - תינוק עגול ומושלם ועד לגבר הנאה, החכם והרגיש שצמחת להיות.
+      השנים במחיצתך הופכות אותי לאדם טוב יותר עם היכולת שלך להבין ולשקף מצבים והלכי רוח ועם הזמן הפכת להיות קצת חבר שלי ולא רק הבן שלי.<br>
+      אני מאחלת לך שתמשיך להיות חבר טוב ואהוב על כל הסובבים אותך, שתסיים בהצלחה את הלימודים (אתה כמעט על קו הסיום), שתדע להנות מהדברים הקטנים ולא פחות מהדברים הגדולים שעוד נכונו לך בהמשך הדרך.<br>
+      תודה עליך ילד שלי, אוהבת אותך המון.<br>
+      אמא
+    </p>
+  </div>
+
+  <!-- Video Section -->
+  <section class="section">
+    <div class="video-container">
+      <video controls>
+        <source src="guy01_VP8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Parallax Section 1 -->
+  <div class="parallax" style="background-image: url('IMG-20170305-WA0009.jpg');">
+    <div class="parallax-text">
+      <p>
+        אתה חכם וחד, תמיד מוצא את הדרך הנכונה עבורך. <br>
+        אתה אוכל בריא, תקשורתי וחברותי מאוד, <br>
+        וגם מצחיק ורגיש בצורה מיוחדת. <br>
+        שתמשיך להתאמן, להנות ממוזיקה טובה, <br>
+        ולסיים את הלימודים שלך בהצלחה. <br>
+        שתעסוק בדברים שמעניינים אותך ושימלאו אותך באושר.
+      </p>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <section class="section">
+    <div class="video-container">
+      <video controls>
+        <source src="guy02_VP8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <p>לגיא, מזל טוב ליום הולדת  , כייף לראות אותך גדל ומתפתח בלימודים בעבודה ובחיים האישיים. אני מאחל לך סיפוק והצלחה בדברים שאתה עושה ותעשה בעתיד, בריאות ושמחה ושלווה.
+אוהב אותך!
+אבא</p>
+  </div>
+
+  <!-- Video Section -->
+  <section class="section">
+    <div class="video-container">
+      <video controls>
+        <source src="GE_VP8.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Parallax Section 2 -->
+  <div class="parallax" style="background-image: url('IMG-20170207-WA0001.jpg');">
+    <div class="parallax-text">
+      <p>אוהבים אותך!</p>
+    </div>
+  </div>
+
+  <!-- Final Section -->
+  <div class="section">
+    <p>מאחל לך שנה מדהימה מלאה בהצלחה, אהבה ואושר. המשך להיות מדהים! 💖</p>
+  </div>
+
+  <!-- Audio -->
+  <audio id="background-audio" loop>
+    <source src="Daydream.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script>
+    const overlay = document.getElementById('overlay');
+    const playButton = document.getElementById('play-button');
+    const audio = document.getElementById('background-audio');
+
+    playButton.addEventListener('click', () => {
+      audio.play(); // Play audio
+ audio.volume = 0.7; // Set volume to 85% (30% less loud)
+      overlay.style.display = 'none'; // Remove overlay
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    });
+  </script>
+
+</body>
+</html>
